@@ -1,0 +1,1125 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding-top: 60px;
+    background-color: #f8f9fa;
+    color: #343a40;
+    line-height: 1.6;
+    position: relative;
+    overflow-x: hidden;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+html {
+    overflow-x: hidden;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+main {
+    padding-bottom: 100px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+main > section {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+main img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #343a40;
+    color: #ffffff;
+    padding: 0.8rem 20px; /* Reduzindo um pouco o padding vertical */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+.secao-inicio {
+    display: flex; /* Ativa o Flexbox para os filhos */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    flex-direction: column; /* Organiza os itens em coluna (logo acima da mensagem) */
+    text-align: center; /* Centraliza o texto dentro dos itens */
+    /* Adicione outros estilos que você já tenha para essa seção */
+    min-height: 50vh; /* Opcional: Define uma altura mínima para a seção ocupar pelo menos metade da tela */
+    padding: 20px; /* Opcional: Adiciona um espaçamento interno */
+}
+
+.logo-grande {
+    /* Você pode ter outros estilos para a logo aqui, como tamanho máximo, etc. */
+    height: 30%;/* Não precisa de estilos de posicionamento específicos para centralizar com Flexbox no pai */
+    width: 30%;
+    margin-bottom: 20px; /* Opcional: Adiciona um espaço abaixo da logo */
+}
+
+.mensagem-inicial {
+    /* Estilos para a mensagem inicial, se houver */
+}
+
+.logo img {
+    max-height: 50px; /* Reduzindo um pouco a altura máxima do logo */
+    vertical-align: middle;
+}
+
+.logo a {
+    color: #ff8c00; /* Nome da loja em laranja */
+    text-decoration: none;
+    font-size: 1.3rem; /* Reduzindo um pouco o tamanho da fonte do logo */
+    font-weight: bold;
+    box-sizing: border-box;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+nav ul li {
+    margin-left: 1rem; /* Reduzindo um pouco a margem esquerda */
+    box-sizing: border-box;
+}
+
+nav ul li:first-child {
+    margin-left: 0;
+    box-sizing: border-box;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+    font-size: 0.9rem; /* Reduzindo um pouco o tamanho da fonte da navegação */
+    box-sizing: border-box;
+}
+
+nav a:hover {
+    color: #ff8c00; /* Hover laranja */
+    box-sizing: border-box;
+}
+
+.carrinho-area {
+    display: flex; /* Alterando para flex para alinhar o ícone */
+    align-items: center;
+    box-sizing: border-box;
+}
+
+
+/* Estilos para a seção Início */
+.secao-inicio {
+    padding: 30px 20px; /* Reduzindo um pouco o padding */
+    text-align: center;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+/* Estilos para o slideshow */
+.slides-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 700px; /* Reduzindo a largura máxima */
+    margin: 15px auto; /* Reduzindo um pouco a margem vertical */
+    border-radius: 6px; /* Arredondando um pouco menos */
+    box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.1); /* Sombra um pouco menor */
+    border: 2px solid #ff8c00; /* Borda laranja */
+    box-sizing: border-box;
+}
+
+.slide {
+    display: none;
+    text-align: center;
+    box-sizing: border-box;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.6s ease-in-out;
+}
+
+.slide.ativo {
+    display: block;
+    opacity: 1;
+    z-index: 1;
+    box-sizing: border-box;
+}
+
+.slide img {
+    width: 100%;
+    max-height: 350px; /* Reduzindo a altura máxima */
+    object-fit: cover;
+    border-radius: 6px 6px 0 0;
+    display: block;
+    box-sizing: border-box;
+}
+
+.slide-descricao {
+    background-color: rgba(0, 0, 0, 0.6); /* Um pouco mais transparente */
+    color: #ffffff;
+    padding: 10px; /* Reduzindo o padding */
+    border-radius: 0 0 6px 6px;
+    font-size: 0.9rem; /* Reduzindo o tamanho da fonte */
+    box-sizing: border-box;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+}
+
+/* Estilos para as setas */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 12px; /* Reduzindo o padding */
+    margin-top: -18px; /* Ajustando a margem */
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem; /* Reduzindo o tamanho da fonte */
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background: rgba(0, 0, 0, 0.4); /* Um pouco mais transparente */
+    border: none;
+    outline: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: #ff8c00; /* Hover laranja nas setas */
+}
+
+/* Estilos para as bolinhas */
+.bolinhas-container {
+    text-align: center;
+    margin-top: 8px; /* Reduzindo a margem */
+}
+
+.bolinha {
+    cursor: pointer;
+    height: 12px; /* Reduzindo o tamanho */
+    width: 12px; /* Reduzindo o tamanho */
+    margin: 0 4px; /* Reduzindo a margem */
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    border: none;
+    outline: none;
+}
+
+.bolinha.ativo {
+    background-color: #ff8c00; /* Bolinha ativa laranja */
+}
+
+.bolinha:hover {
+    background-color: #717171;
+}
+
+/* Estilos para a seção Quem Somos */
+.secao-quem-somos {
+    display: flex;
+    align-items: center;
+    min-height: 350px; /* Reduzindo a altura mínima */
+    padding: 30px 20px; /* Reduzindo o padding */
+    box-sizing: border-box;
+    width: 100%;    
+}
+
+.quem-somos-imagem {
+    flex: 1; /* Mantém o flex para o layout com o texto */
+    background-size: contain; /* Garante que toda a imagem caiba dentro do div */
+    background-repeat: no-repeat; /* Evita que a imagem se repita se for menor que o div */
+    background-position: center; /* Centraliza a imagem dentro do div */
+    min-height: 300px; /* Define uma altura mínima para o div */
+    /* width: 50%; */ /* Pode ser necessário ajustar a largura */
+    }
+
+.quem-somos-texto {
+    width: 50%; /* Aumentando a largura */
+    padding: 15px; /* Reduzindo o padding */
+    text-align: left;
+    box-sizing: border-box;
+}
+
+.quem-somos-texto h2 {
+    color: #ff8c00; /* Título em laranja */
+    margin-bottom: 10px; /* Reduzindo a margem */
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 1.4rem; /* Reduzindo o tamanho da fonte */
+}
+
+.quem-somos-texto p {
+    line-height: 1.7; /* Ajustando a altura da linha */
+    font-size: 0.9rem; /* Reduzindo o tamanho da fonte */
+    box-sizing: border-box;
+    width: 100%;
+    margin-bottom: 8px; /* Reduzindo a margem */
+}
+
+/* Estilos para a seção Catálogo */
+.secao-catalogo {
+    padding: 30px 20px; /* Reduzindo o padding */
+    text-align: center;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.catalogo-categorias {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Reduzindo o gap */
+    margin-bottom: 15px; /* Reduzindo a margem */
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.categoria-botao {
+    background-color: #ff8c00; /* Fundo laranja */
+    color: #343a40; /* Texto cinza escuro */
+    border: 1px solid #343a40; /* Borda cinza escura */
+    padding: 8px 15px; /* Reduzindo o padding */
+    border-radius: 4px; /* Arredondando um pouco menos */
+    cursor: pointer;
+    font-size: 0.9rem; /* Reduzindo o tamanho da fonte */
+    transition: background-color 0.3s ease-in-out;
+    box-sizing: border-box;
+}
+
+.categoria-botao:hover {
+    background-color: #d97706; /* Hover laranja mais escuro */
+    color: #ffffff; /* Texto branco no hover */
+    border-color: #d97706;
+    box-sizing: border-box;
+}
+
+.catalogo-sessao {
+    text-align: left;
+    margin-bottom: 20px; /* Reduzindo a margem */
+    box-sizing: border-box;
+    width: 100%;
+    display: none; /* Garante que as seções estão ocultas inicialmente */
+}
+
+.catalogo-sessao h3 {
+    color: #ff8c00; /* Títulos em laranja */
+    margin-bottom: 10px; /* Reduzindo a margem */
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 1.2rem; /* Reduzindo o tamanho da fonte */
+}
+
+.produtos-boinas,
+.produtos-coletes,
+.produtos-outros {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Reduzindo o tamanho mínimo */
+    gap: 15px; /* Reduzindo o gap */
+    margin-top: 10px; /* Reduzindo a margem */
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.produto {
+    background-color: #ffffff;
+    border: 1px solid #dee2e6;
+    border-radius: 6px; /* Arredondando um pouco menos */
+    padding: 10px; /* Reduzindo o padding */
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0.1rem 0.2rem rgba(0, 0, 0, 0.075); /* Sombra menor */
+    transition: transform 0.2s ease-in-out;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.produto:hover {
+    transform: scale(1.01); /* Menor escala no hover */
+    box-shadow: 0 0.3rem 0.6rem rgba(0, 0, 0, 0.1); /* Sombra menor no hover */
+    box-sizing: border-box;
+}
+
+.imagem-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 4px; /* Arredondando um pouco menos */
+    margin-bottom: 8px; /* Reduzindo a margem */
+    cursor: pointer;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.produto img {
+    width: 100%;
+    display: block;
+    transition: transform 0.3s ease-in-out;
+    box-sizing: border-box;
+    max-width: 100%;
+    height: auto;
+    max-height: 200px; /* Limitando a altura da imagem do produto */
+    object-fit: cover;
+}
+
+.produto:hover .produto img {
+    transform: scale(1.03); /* Menor escala no hover da imagem */
+    box-sizing: border-box;
+}
+
+.hover-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Um pouco mais transparente */
+    color: #ffffff;
+    padding: 8px; /* Reduzindo o padding */
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    box-sizing: border-box;
+    font-size: 0.8rem; /* Reduzindo a fonte no hover */
+}
+
+.produto:hover .hover-info {
+    opacity: 1;
+    box-sizing: border-box;
+}
+
+.hover-info h3, .hover-info p {
+    margin: 3px 0; /* Reduzindo a margem */
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 0.9rem; /* Reduzindo a fonte no hover */
+}
+
+.produto h3 {
+    margin-top: 0;
+    color: #ffffff; /* Nome do produto em preto */
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 0.9rem; /* Reduzindo o tamanho da fonte */
+    margin-bottom: 5px; /* Reduzindo a margem */
+}
+
+.preco {
+    color: #ff8c00; /* Preço em laranja */
+    font-weight: bold;
+    margin-bottom: 8px; /* Reduzindo a margem */
+    font-size: 0.9rem; /* Reduzindo o tamanho da fonte */
+    box-sizing: border-box;
+}
+
+.adicionar-carrinho {
+    background-color: #ff8c00; /* Fundo laranja */
+    color: #000000; /* Texto preto */
+    border: 1px solid #000000; /* Borda preta */
+    padding: 0.5rem 1rem; /* Reduzindo o padding */
+    border-radius: 4px; /* Arredondando um pouco menos */
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    font-size: 0.9rem; /* Reduzindo o tamanho da fonte */
+    box-sizing: border-box;
+}
+
+.adicionar-carrinho:hover {
+    background-color: #d97706; /* Hover laranja mais escuro */
+    border-color: #d97706;
+    color: #ffffff; /* Texto branco no hover */
+    box-sizing: border-box;
+}
+
+footer {
+    background-color: #343a40;
+    color:#ffffff;
+    text-align: center;
+    padding: 0.1rem 0; /* Reduzindo um pouco o padding */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 0.8rem; /* Reduzindo o tamanho da fonte */
+    z-index: 10;
+    box-sizing: border-box;
+}
+
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+    box-sizing: border-box;
+}
+
+footer a:hover {
+    color: #ff8c00; /* Hover laranja nos links do footer */
+    box-sizing: border-box;
+}
+
+/* Estilos para o modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1001;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.7); /* Um pouco mais transparente */
+    box-sizing: border-box;
+}
+
+.modal-content {
+    background-color: #ffffff;
+    margin: 10% auto; /* Reduzindo a margem superior */
+    padding: 15px; /* Reduzindo o padding */
+    border: 1px solid #888;
+    width: 80%;
+    border-radius: 6px; /* Arredondando um pouco menos */
+    position: relative;
+    box-sizing: border-box;
+    max-width: 90%;
+}
+
+#imagem-ampliada {
+    width: 100%;
+    height: auto;
+    border-radius: 4px; /* Arredondando um pouco menos */
+    margin-bottom: 10px; /* Reduzindo a margem */
+    box-sizing: border-box;
+    display: block;
+    max-height: 500px; /* Limitando a altura da imagem ampliada */
+    object-fit: contain; /* Ajustando o object-fit */
+}
+
+#detalhes-produto {
+    color: #343a40;
+    text-align: center;
+    padding: 15px; /* Reduzindo o padding */
+    box-sizing: border-box;
+    width: 100%;
+}
+
+#detalhes-produto h3 {
+    margin-top: 0;
+    margin-bottom: 8px; /* Reduzindo a margem */
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 1.2rem; /* Reduzindo o tamanho da fonte */
+}
+
+#detalhes-produto p {
+    margin-bottom: 8px; /* Reduzindo a margem */
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 0.9rem; /* Reduzindo o tamanho da fonte */
+    line-height: 1.7; /* Ajustando a altura da linha */
+}
+
+.fechar-modal {
+    color: #aaaaaa;
+    position: absolute;
+    top: 8px; /* Ajustando a posição */
+    right: 12px; /* Ajustando a posição */
+    font-size: 1.5rem; /* Reduzindo o tamanho da fonte */
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+    cursor: pointer;
+    z-index: 1002;
+    box-sizing: border-box;
+}
+
+.fechar-modal:hover,
+.fechar-modal:focus {
+    color: #ff8c00; /* Hover laranja no botão de fechar */
+    text-decoration: none;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+#adicionar-do-modal {
+    background-color: #ff8c00; /* Fundo laranja */
+    color: #000000; /* Texto preto */
+    border: 1px solid #000000; /* Borda preta */
+    padding: 0.5rem 1rem; /* Reduzindo o padding */
+    border-radius: 4px; /* Arredondando um pouco menos */
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    font-size: 0.9rem; /* Reduzindo o tamanho da fonte */
+    box-sizing: border-box;
+}
+
+#adicionar-do-modal:hover {
+    background-color: #d97706; /* Hover laranja mais escuro */
+    border-color: #d97706;
+    color: #ffffff; /* Texto branco no hover */
+    box-sizing: border-box;
+}
+
+/* Estilos para o carrinho */
+#carrinho-container {
+    position: fixed;
+    top: 0;
+    right: -300px; /* Reduzindo a largura inicial */
+    width: 300px; /* Reduzindo a largura */
+    max-width: 90%;
+    height: 100%;
+    background-color: #ffffff;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+    padding: 15px; /* Reduzindo o padding */
+    transition: right 0.3s ease-in-out;
+    overflow-y: auto;
+    z-index: 1001;
+    box-sizing: border-box;
+}
+
+#carrinho-container.aberto {
+    right: 0;
+    display: block;
+    box-sizing: border-box;
+}
+
+#carrinho-container h2 {
+    color: #ff8c00; /* Título do carrinho em laranja */
+    margin-top: 0;
+    margin-bottom: 10px; /* Reduzindo a margem */
+    text-align: center;
+    font-size: 1.2rem; /* Reduzindo o tamanho da fonte */
+    box-sizing: border-box;
+    width: 100%;
+}
+
+#lista-carrinho {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 10px; /* Reduzindo a margem */
+    box-sizing: border-box;
+    width: 100%;
+}
+
+#lista-carrinho li {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #dee2e6;
+    padding: 8px 0; /* Reduzindo o padding */
+    box-sizing: border-box;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Alinhamento para o botão remover */
+}
+
+#lista-carrinho li img {
+    width: 50px; /* Reduzindo a largura da imagem */
+    height: 50px; /* Reduzindo a altura da imagem */
+    margin-right: 8px; /* Reduzindo a margem direita */
+    object-fit: cover;
+    border-radius: 4px; /* Arredondando um pouco menos */
+    box-shadow: 0 0.1rem 0.2rem rgba(0, 0, 0, 0.075); /* Sombra menor */
+    box-sizing: border-box;
+    margin-bottom: 3px; /* Reduzindo a margem inferior */
+}
+
+.item-info {
+    flex-grow: 1;
+    box-sizing: border-box;
+    width: calc(100% - 60px); /* Ajustando a largura */
+    min-width: 0;
+}
+
+.item-info h4 {
+    margin-top: 0;
+    margin-bottom: 3px; /* Reduzindo a margem */
+    font-size: 0.9rem; /* Reduzindo o tamanho da fonte */
+    color: #343a40;
+    box-sizing: border-box;
+    width: 100%;
+    overflow-wrap: break-word;
+}
+
+.item-preco {
+    font-weight: bold;
+    color: #ff8c00; /* Preço do item em laranja */
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left; /* Alinhando à esquerda */
+    font-size: 0.8rem; /* Reduzindo o tamanho da fonte */
+    margin-bottom: 3px; /* Reduzindo a margem */
+}
+
+.quantidade-controle-e-remover {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.quantidade-controle {
+    display: flex;
+    align-items: center;
+    margin-top: 3px; /* Reduzindo a margem */
+    box-sizing: border-box;
+}
+
+.quantidade-controle button {
+    background: none;
+    border: 1px solid #ced4da;
+    padding: 0.15rem 0.3rem; /* Reduzindo o padding */
+    margin: 0 2px; /* Reduzindo a margem */
+    cursor: pointer;
+    border-radius: 3px;
+    font-size: 0.7rem; /* Reduzindo o tamanho da fonte */
+    transition: border-color 0.3s ease-in-out;
+    box-sizing: border-box;
+}
+
+.quantidade-controle button:hover {
+    border-color: #007bff;
+    box-sizing: border-box;
+}
+
+.quantidade-controle span {
+    margin: 0 3px; /* Reduzindo a margem */
+    font-size: 0.8rem; /* Reduzindo o tamanho da fonte */
+    color: #495057;
+    box-sizing: border-box;
+}
+
+#carrinho-vazio {
+    text-align: center;
+    color: #6c757d;
+    margin-top: 15px; /* Reduzindo a margem */
+    font-size: 0.9rem; /* Reduzindo o tamanho da fonte */
+    box-sizing: border-box;
+    width: 100%;
+}
+
+#total-carrinho {
+    font-weight: bold;
+    text-align: right;
+    margin-bottom: 10px; /* Reduzindo a margem */
+    color: #ff8c00; /* Total em laranja */
+    font-size: 1rem; /* Reduzindo o tamanho da fonte */
+    box-sizing: border-box;
+    width: 100%;
+}
+
+#finalizar-whatsapp,
+#fechar-carrinho {
+    background-color: #ff8c00; /* Fundo laranja */
+    color: #000000; /* Texto preto */
+    border: 1px solid #000000; /* Borda preta */
+    padding: 0.5rem 1rem; /* Reduzindo o padding */
+    border-radius: 4px; /* Arredondando um pouco menos */
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    width: 100%;
+    margin-bottom: 8px; /* Reduzindo a margem */
+    font-size: 0.9rem; /* Reduzindo o tamanho da fonte */
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#fechar-carrinho {
+    background-color: #343a40; /* Fundo cinza escuro */
+    color: #ffffff; /* Texto branco */
+    font-size: 0.9rem; /* Reduzindo o tamanho da fonte */
+}
+
+#finalizar-compra:hover,
+#fechar-carrinho:hover {
+    opacity: 0.9;
+    box-sizing: border-box;
+}
+
+#notificacao-container {
+    position: fixed;
+    top: 15px; /* Ajustando a posição */
+    right: 15px; /* Ajustando a posição */
+    z-index: 1002;
+    box-sizing: border-box;
+}
+
+.notificacao {
+    background-color: #ff8c00; /* Laranja para sucesso */
+    color: #000000; /* Texto preto */
+    padding: 10px; /* Reduzindo o padding */
+    margin-bottom: 8px; /* Reduzindo a margem */
+    border-radius: 4px; /* Arredondando um pouco menos */
+    opacity: 0.9;
+    transition: opacity 0.5s ease-in-out;
+    box-shadow: 0 0.1rem 0.2rem rgba(0, 0, 0, 0.075); /* Sombra menor */
+    font-size: 0.8rem; /* Reduzindo o tamanho da fonte */
+    box-sizing: border-box;
+}
+
+.notificacao.removido {
+    background-color: #6c757d; /* Cinza para remoção */
+    color: #ffffff;
+    box-sizing: border-box;
+}
+
+.notificacao.atualizado {
+    background-color: #343a40; /* Cinza escuro para atualização */
+    color: #ffffff;
+    box-sizing: border-box;
+}
+
+/* Estilos para o carrinho flutuante */
+.carrinho-flutuante {
+    position: fixed;
+    bottom: 15px; /* Ajustando a posição */
+    right: 15px; /* Ajustando a posição */
+    background-color: #ff8c00; /* Fundo laranja */
+    color: #000000; /* Texto preto */
+    border-radius: 50%;
+    width: 50px; /* Reduzindo o tamanho */
+    height: 50px; /* Reduzindo o tamanho */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem; /* Reduzindo o tamanho do ícone */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); /* Sombra menor */
+    cursor: pointer;
+    z-index: 20;
+    transition: background-color 0.3s ease-in-out;
+    box-sizing: border-box;
+}
+
+.carrinho-flutuante:hover {
+    background-color: #d97706; /* Hover laranja mais escuro */
+    box-sizing: border-box;
+}
+
+.carrinho-flutuante a {
+    color: #000000;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.carrinho-flutuante i {
+    margin-right: 0; /* Removendo a margem do ícone */
+    box-sizing: border-box;
+}
+
+#carrinho-quantidade-flutuante {
+    position: absolute;
+    top: -8px; /* Ajustando a posição */
+    right: -8px; /* Ajustando a posição */
+    background-color: #000000; /* Fundo preto */
+    color: #ff8c00; /* Texto laranja */
+    border-radius: 50%;
+    padding: 0.2rem 0.4rem; /* Reduzindo o padding */
+    font-size: 0.7rem; /* Reduzindo o tamanho da fonte */
+    font-weight: bold;
+    z-index: 21;
+    box-sizing: border-box;
+}
+
+/* Estilos para o botão de remover no carrinho */
+#carrinho-container .remover-item {
+    background-color: #dc3545;
+    color: #ffffff;
+    border: none;
+    padding: 0.2rem 0.4rem; /* Ainda menor */
+    border-radius: 4px; /* Arredondando um pouco menos */
+    cursor: pointer;
+    font-size: 0.6rem; /* Ainda menor */
+    transition: background-color 0.3s ease-in-out;
+    margin-left: 5px; /* Adicionando um pouco de margem para separar */
+}
+
+#carrinho-container .remover-item:hover {
+    background-color: #c82333;
+}
+
+/* Estilos para a seção de formas de pagamento */
+#formas-pagamento {
+    margin-top: 15px; /* Reduzindo a margem */
+    padding-top: 10px; /* Reduzindo o padding */
+    border-top: 1px solid #dee2e6;
+}
+
+#formas-pagamento h3 {
+    color: #ff8c00; /* Título em laranja */
+    margin-top: 0;
+    margin-bottom: 8px; /* Reduzindo a margem */
+    text-align: center;
+    font-size: 1rem; /* Reduzindo o tamanho da fonte */
+}
+
+.pagamento-opcoes {
+    display: flex;
+    justify-content: space-around;
+    gap: 8px; /* Reduzindo o gap */
+    margin-bottom: 10px; /* Reduzindo a margem */
+    flex-wrap: wrap;
+}
+
+.opcao-pagamento {
+    background-color: #f8f9fa;
+    color: #343a40;
+    border: 1px solid #ced4da;
+    padding: 0.4rem 0.7rem; /* Reduzindo o padding */
+    border-radius: 4px; /* Arredondando um pouco menos */
+    cursor: pointer;
+    font-size: 0.7rem; /* Reduzindo o tamanho da fonte */
+    transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3px; /* Reduzindo o gap */
+    width: calc(50% - 4px); /* Ajustando a largura */
+    margin-bottom: 4px; /* Reduzindo a margem */
+    box-sizing: border-box;
+}
+
+.opcao-pagamento:hover {
+    background-color: #e9ecef;
+    border-color: #adb5bd;
+}
+
+.opcao-pagamento i {
+    font-size: 0.8rem; /* Reduzindo o tamanho do ícone */
+}
+
+.opcao-pagamento.selecionado {
+    border: 2px solid #ff8c00 !important; /* Borda laranja quando selecionado */
+    box-shadow: 0 0 3px rgba(255, 140, 0, 0.5); /* Sombra laranja suave */
+}
+
+/* Responsividade para o header */
+@media (max-width: 768px) {
+    header {
+        flex-direction: row; /* Voltando para linha em telas menores para os ícones */
+        justify-content: space-between; /* Espaçar logo e carrinho */
+        align-items: center;
+        padding: 0.8rem 15px; /* Ajustando o padding */
+    }
+
+    nav {
+        display: none; /* Ocultar a navegação principal em telas menores (pode adicionar um menu hambúrguer depois) */
+    }
+
+    .carrinho-area {
+        display: flex; /* Mostrar o carrinho em telas menores */
+    }
+
+    .secao-quem-somos {
+        flex-direction: column;
+        padding: 20px 15px; /* Ajustando o padding */
+    }
+
+    .quem-somos-imagem {
+        width: 100%;
+        height: auto;
+        margin-bottom: 15px; /* Reduzindo a margem */
+    }
+
+    .quem-somos-texto {
+        width: 100%;
+        text-align: left;
+        padding: 10px; /* Reduzindo o padding */
+    }
+
+    .catalogo-categorias {
+        flex-direction: row; /* Alinhar botões horizontalmente em telas menores */
+        justify-content: space-around;
+        gap: 8px; /* Reduzindo o gap */
+        margin-bottom: 10px; /* Reduzindo a margem */
+        flex-wrap: wrap; /* Permitir quebrar a linha */
+    }
+
+    .categoria-botao {
+        padding: 6px 10px; /* Reduzindo o padding */
+        font-size: 0.8rem; /* Reduzindo a fonte */
+        margin-bottom: 5px; /* Reduzindo a margem */
+    }
+
+    .produtos-boinas,
+    .produtos-coletes,
+    .produtos-outros {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Menor largura mínima */
+        gap: 10px; /* Reduzindo o gap */
+        margin-top: 8px; /* Reduzindo a margem */
+    }
+
+    .produto {
+        padding: 8px; /* Reduzindo o padding */
+    }
+
+    .produto h3 {
+        font-size: 0.8rem; /* Reduzindo a fonte */
+        margin-bottom: 3px; /* Reduzindo a margem */
+    }
+
+    .preco {
+        font-size: 0.7rem; /* Reduzindo a fonte */
+        margin-bottom: 5px; /* Reduzindo a margem */
+    }
+
+    .adicionar-carrinho {
+        padding: 0.4rem 0.8rem; /* Reduzindo o padding */
+        font-size: 0.7rem; /* Reduzindo a fonte */
+    }
+
+    .modal-content {
+        margin-top: 5%; /* Reduzindo a margem superior */
+        padding: 15px; /* Reduzindo o padding */
+    }
+
+    .fechar-modal {
+        font-size: 1.2rem; /* Reduzindo a fonte */
+        top: 5px; /* Ajustando a posição */
+        right: 8px; /* Ajustando a posição */
+    }
+
+    #detalhes-produto h3 {
+        font-size: 1rem; /* Reduzindo a fonte */
+        margin-bottom: 5px; /* Reduzindo a margem */
+    }
+
+    #detalhes-produto p {
+        font-size: 0.8rem; /* Reduzindo a fonte */
+        margin-bottom: 5px; /* Reduzindo a margem */
+    }
+
+    #adicionar-do-modal {
+        font-size: 0.8rem; /* Reduzindo a fonte */
+        padding: 0.4rem 0.8rem; /* Reduzindo o padding */
+    }
+
+    .carrinho-flutuante {
+        bottom: 10px; /* Ajustando a posição */
+        right: 10px; /* Ajustando a posição */
+        width: 40px; /* Reduzindo o tamanho */
+        height: 40px; /* Reduzindo o tamanho */
+        font-size: 1rem; /* Reduzindo o tamanho do ícone */
+    }
+
+    #carrinho-quantidade-flutuante {
+        top: -6px; /* Ajustando a posição */
+        right: -6px; /* Ajustando a posição */
+        padding: 0.15rem 0.3rem; /* Reduzindo o padding */
+        font-size: 0.6rem; /* Reduzindo a fonte */
+    }
+
+    #carrinho-container {
+        width: 95%; /* Ocupar mais largura */
+        max-width: 300px; /* Mantendo a largura máxima */
+        padding: 10px; /* Reduzindo o padding */
+    }
+
+    #lista-carrinho li {
+        padding: 5px 0; /* Reduzindo o padding */
+    }
+
+    #lista-carrinho li img {
+        width: 40px; /* Reduzindo o tamanho da imagem */
+        height: 40px; /* Reduzindo o tamanho da imagem */
+        margin-right: 5px; /* Reduzindo a margem */
+    }
+
+    .item-info h4 {
+        font-size: 0.8rem; /* Reduzindo a fonte */
+        margin-bottom: 2px; /* Reduzindo a margem */
+    }
+
+    .item-preco {
+        font-size: 0.7rem; /* Reduzindo a fonte */
+        margin-bottom: 2px; /* Reduzindo a margem */
+    }
+
+    .quantidade-controle button {
+        padding: 0.1rem 0.2rem; /* Reduzindo o padding */
+        font-size: 0.6rem; /* Reduzindo a fonte */
+        margin: 0 1px; /* Reduzindo a margem */
+    }
+
+    .quantidade-controle span {
+        font-size: 0.7rem; /* Reduzindo a fonte */
+        margin: 0 2px; /* Reduzindo a margem */
+    }
+
+    #carrinho-container .remover-item {
+        padding: 0.2rem 0.3rem; /* Reduzindo o padding */
+        font-size: 0.5rem; /* Reduzindo a fonte */
+        margin-left: 3px; /* Reduzindo a margem */
+    }
+
+    #formas-pagamento {
+        margin-top: 10px; /* Reduzindo a margem */
+        padding-top: 8px; /* Reduzindo o padding */
+    }
+
+    #formas-pagamento h3 {
+        font-size: 0.9rem; /* Reduzindo a fonte */
+        margin-bottom: 5px; /* Reduzindo a margem */
+    }
+
+    .pagamento-opcoes {
+        gap: 5px; /* Reduzindo o gap */
+        margin-bottom: 8px; /* Reduzindo a margem */
+    }
+
+    .opcao-pagamento {
+        padding: 0.3rem 0.5rem; /* Reduzindo o padding */
+        font-size: 0.6rem; /* Reduzindo a fonte */
+        gap: 2px; /* Reduzindo o gap */
+        margin-bottom: 3px; /* Reduzindo a margem */
+    }
+
+    .opcao-pagamento i {
+        font-size: 0.7rem; /* Reduzindo a fonte do ícone */
+    }
+
+    #total-carrinho {
+        font-size: 0.9rem; /* Reduzindo a fonte */
+        margin-bottom: 10px; /* Reduzindo a margem */
+    }
+
+    #finalizar-whatsapp,
+    #fechar-carrinho {
+        padding: 0.4rem 0.8rem; /* Reduzindo o padding */
+        font-size: 0.8rem; /* Reduzindo a fonte */
+        margin-bottom: 5px; /* Reduzindo a margem */
+    }
+}
+
+/* Responsividade para telas menores (ajuste específico para pagamento) */
+@media (max-width: 600px) {
+    .opcao-pagamento {
+        width: 100%;
+    }
+}

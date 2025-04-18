@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja de Acessórios</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="#">
+                <img src="css/img/logo.png" alt="Sua Logo">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#quem-somos">Quem Somos</a></li>
+                <li><a href="#catalogo">Catálogo</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="secao-inicio inicio-estatico">
+            <div class="logo-grande">
+                <img src="css/img/logo.png" alt="Logo da Loja">
+            </div>
+            <div class="mensagem-inicial">
+                <h2>Conheça nossos produtos</h2>
+            </div>
+        </section>
+        <section id="quem-somos" class="secao-quem-somos">
+            <div class="quem-somos-imagem" style="background-image: url('css/img/quemsomos.jpg');"></div>
+            <div class="quem-somos-texto">
+                <h2>Quem Somos</h2>
+                <p>Somos uma loja apaixonada por acessórios que elevam o seu estilo e personalidade. Nossa missão é oferecer produtos de alta qualidade, com design exclusivo e preços acessíveis. Acreditamos que os detalhes fazem toda a diferença, e por isso, selecionamos cuidadosamente cada item do nosso catálogo para garantir que você encontre exatamente o que procura.</p>
+                <p>Desde boinas elegantes até coletes modernos e uma variedade de outros acessórios, nossa coleção é pensada para complementar o seu visual em todas as ocasiões. Navegue pela nossa loja e descubra a peça perfeita para expressar quem você é!</p>
+            </div>
+        </section>
+        <section id="catalogo" class="secao-catalogo">
+            <h2>Nosso Catálogo</h2>
+            <div class="catalogo-categorias">
+                <button class="categoria-botao ativo" data-categoria="boinas">Boinas</button>
+                <button class="categoria-botao" data-categoria="coletes">Coletes</button>
+                <button class="categoria-botao" data-categoria="outros">Outros Produtos</button>
+            </div>
+            <div id="catalogo-boinas" class="catalogo-sessao" style="display: block;">
+                <h3>Boinas</h3>
+                <div class="produtos-boinas">
+                    <div class="produto"
+                         data-id="1"
+                         data-nome="Boina Verde Musgo"
+                         data-preco="45.90"
+                         data-descricao-breve="Boina de linho para dias quentes."
+                         data-descricao-completa="Boina de alta qualidade produzida em linho, um tecido leve e respirável, ideal para os dias mais quentes. Mantenha a elegância e o conforto mesmo durante o verão com este acessório clássico e sofisticado.">
+                        <div class="imagem-container">
+                            <img src="https://scontent.fcwb7-1.fna.fbcdn.net/v/t1.15752-9/414118383_749499403281069_4727332105011399722_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=0024fc&_nc_ohc=q2nvL2GiC8sQ7kNvwEJv7Px&_nc_oc=AdktrJkJijzqppWyN4lQs1_lNgjbeheedFyRYNqg8nw3lXtqiX1VqpbqF0oQ2ID8-Z8VGPrc5_HE0eklmCuuDyCz&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.fcwb7-1.fna&oh=03_Q7cD2AFDcz2rLR8Yc15qi8ilB0Ta_jLto0Q9R9AuSKk_oHjUuw&oe=68287CC6" alt="Boina Verde Musgo">
+                            <div class="hover-info">
+                                <h3>Boina Verde Musgo</h3>
+                                <p class="descricao">Boina produzida em linho, perfeita para dias quentes.</p>
+                            </div>
+                        </div>
+                        <h3>Boina Verde Musgo</h3>
+                        <p class="preco">R$ 45.90</p>
+                        <button class="adicionar-carrinho">Adicionar ao Carrinho</button>
+                        <p class="descricao" style="display: none;">Boina produzida em linho, perfeita para dias quentes.</p>
+                    </div>
+                    <div class="produto"
+                         data-id="2"
+                         data-nome="Boina Marfim"
+                         data-preco="59.90"
+                         data-descricao-breve="Boina de linho para o verão."
+                         data-descricao-completa="Old Glentmans Marfim boina produzida em linho um tecido perfeito para dias mais quentes para manter a classe até em dias de verão">
+                        <div class="imagem-container">
+                            <img src="https://scontent.fcwb7-1.fna.fbcdn.net/v/t1.15752-9/372677630_268744979317025_5552431599794789021_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=0024fc&_nc_ohc=yyAtqTiPZJ0Q7kNvwEqW_2u&_nc_oc=AdlZ2DNtCEVGI_4VJdjjwjtUTsWKKle2yCju3xQho_-qP8DKj6F1ynw0cryA5kje7dODna31fZ-VlG-uaEGM2-z1&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.fcwb7-1.fna&oh=03_Q7cD2AHKvYSMGXSPmCGnlSNlJZ6pPXjIJ2Vb-29grgTthLEFRA&oe=68288DB9" alt="Boina Marfim">
+                            <div class="hover-info">
+                                <h3>Boina Marfim</h3>
+                                <p class="descricao">Old Glentmans Marfim boina produzida em linho um tecido perfeito para dias mais quentes para manter a classe até em dias de verão</p>
+                            </div>
+                        </div>
+                        <h3>Boina Marfim</h3>
+                        <p class="preco">R$ 59.90</p>
+                        <button class="adicionar-carrinho">Adicionar ao Carrinho</button>
+                        <p class="descricao" style="display: none;">Old Glentmans Marfim boina produzida em linho um tecido perfeito para dias mais quentes para manter a classe até em dias de verão</p>
+                    </div>
+                    <div class="produto"
+                         data-id="3"
+                         data-nome="Boina Suede"
+                         data-preco="52.50"
+                         data-descricao-breve="Boina de suede resistente."
+                         data-descricao-completa="Old Boys Suede uma boina produzida em veludo Suede de alta gramatura feita de maneira bruta para ter resistência contra o tempo e climas pesados feita para durar">
+                        <div class="imagem-container">
+                            <img src="https://scontent.fcwb7-1.fna.fbcdn.net/v/t1.15752-9/417673662_414187100944938_682204655755656119_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=0024fc&_nc_ohc=a8Z9lWH8K-oQ7kNvwFWBiHc&_nc_oc=AdkK3oD6bZQyusm9IooY-6nTZ7cqGNx2d427N-gOzhRNREF4uwAx9PTLL5WU1mTdMIch7IwiX73ljuCm-qs35Ebf&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.fcwb7-1.fna&oh=03_Q7cD2AEt-uhI9i1izjR0bbuKynydetVN24F2y9LPGLnx746PTQ&oe=6828754D" alt="Boina Suede">
+                            <div class="hover-info">
+                                <h3>Boina Suede</h3>
+                                <p class="descricao">Old Boys Suede uma boina produzida em veludo Suede de alta gramatura feita de maneira bruta para ter resistência contra o tempo e climas pesados feita para durar</p>
+                            </div>
+                        </div>
+                        <h3>Boina Suede</h3>
+                        <p class="preco">R$ 52.50</p>
+                        <button class="adicionar-carrinho">Adicionar ao Carrinho</button>
+                        <p class="descricao" style="display: none;">Old Boys Suede uma boina produzida em veludo Suede de alta gramatura feita de maneira bruta para ter resistência contra o tempo e climas pesados feita para durar</p>
+                    </div>
+                    <div class="produto"
+                         data-id="4"
+                         data-nome="Boina Xadrez"
+                         data-preco="65.00"
+                         data-descricao-breve="Boina clássica com padrão xadrez."
+                         data-descricao-completa="Boina elegante com um padrão xadrez atemporal, perfeita para adicionar um toque de sofisticação ao seu visual. Confortável e estilosa para diversas ocasiões.">
+                        <div class="imagem-container">
+                            <img src="https://scontent.fcwb7-1.fna.fbcdn.net/v/t1.15752-9/451039555_1327612844864853_5306021702036008969_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=0024fc&_nc_ohc=L915YBjdPUsQ7kNvwHKsZJW&_nc_oc=Adm_SzKm5UdDrI6fW6iCKEySG_IbqdasOXQgwqvrBLHbiHgZLn3K_1vv48HaGYBlePfgmmX2M-QBfCimQs28vfA3&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.fcwb7-1.fna&oh=03_Q7cD2AGgW86_svehtuZUD26f2RqbDUXeuyK41Ww-EVD3tZuZzQ&oe=682873F6" alt="Boina Xadrez">
+                            <div class="hover-info">
+                                <h3>Boina Xadrez</h3>
+                                <p class="descricao">Boina clássica com padrão xadrez.</p>
+                            </div>
+                        </div>
+                        <h3>Boina Xadrez</h3>
+                        <p class="preco">R$ 65.00</p>
+                        <button class="adicionar-carrinho">Adicionar ao Carrinho</button>
+                        <p class="descricao" style="display: none;">Boina clássica com padrão xadrez.</p>
+                    </div>
+                    <div class="produto"
+                         data-id="5"
+                         data-nome="Boina de Couro"
+                         data-preco="79.90"
+                         data-descricao-breve="Boina de couro elegante e durável."
+                         data-descricao-completa="Boina feita em couro de alta qualidade, oferecendo durabilidade e um visual sofisticado. Ideal para quem busca um acessório marcante e cheio de estilo.">
+                        <div class="imagem-container">
+                            <img src="https://scontent.fcwb7-1.fna.fbcdn.net/v/t1.15752-9/470052946_8770361783058986_7231513922744850415_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=0024fc&_nc_ohc=s7ESDTepm3MQ7kNvwGvnW4T&_nc_oc=AdlL6zxXqIbSLvbxXKhbPCCCazfG1m8bvSUvlfoeCFFb7_VopLEAt18D3aPWc1ZsWy-F_PFZNhKVAkwx9wN6fH5S&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.fcwb7-1.fna&oh=03_Q7cD2AEUrIeXn59d5v_meSpDoa7DQb9g3wuPu7sBuN1rKcgUeg&oe=68289460" alt="Boina de Couro">
+                            <div class="hover-info">
+                                <h3>Boina de Couro</h3>
+                                <p class="descricao">Boina de couro elegante e durável.</p>
+                            </div>
+                        </div>
+                        <h3>Boina de Couro</h3>
+                        <p class="preco">R$ 79.90</p>
+                        <button class="adicionar-carrinho">Adicionar ao Carrinho</button>
+                        <p class="descricao" style="display: none;">Boina de couro elegante e durável.</p>
+                    </div>
+                </div>
+            </div>
+            <div id="catalogo-coletes" class="catalogo-sessao" style="display: none;">
+                <h3>Colete Acolchoado</h3>
+                <div class="produtos-coletes">
+                    <div class="produto" data-id="6" data-nome="Colete Esportivo" data-preco="129.90"
+                         data-descricao-breve="Colete leve e quente para atividades."
+                         data-descricao-completa="Colete leve e quente para atividades ao ar livre. Ideal para quem busca conforto e proteção contra o frio durante exercícios ou passeios.">
+                        <div class="imagem-container">
+                            <img src="https://scontent.fcwb7-1.fna.fbcdn.net/v/t1.15752-9/464987044_562568543207788_4604216506142879224_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=0024fc&_nc_ohc=YrwPlpGIVroQ7kNvwF0Q-pV&_nc_oc=Adl0a5cU9919v5ctFMzm08z0rHJGQoPTY1umnI_9hSUf5li3FIZ_Ja5C4u6Bdpws0kl2H3Lla_XjLayOyhcjwcub&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.fcwb7-1.fna&oh=03_Q7cD2AEMvmG2TB9oBw-gAqvq6CoVgTE1S1s3Sf7raR_Ga82YzA&oe=68288C55" alt="Colete Esportivo">
+                            <div class="hover-info">
+                                <h3>Colete Esportivo</h3>
+                                <p class="descricao">Colete leve e quente para atividades ao ar livre.</p>
+                            </div>
+                        </div>
+                        <h3>Colete Esportivo</h3>
+                        <p class="preco">R$ 129.90</p>
+                        <button class="adicionar-carrinho">Adicionar ao Carrinho</button>
+                        <p class="descricao" style="display: none;">Colete leve e quente para atividades ao ar livre.</p>
+                    </div>
+                    <div class="produto" data-id="7" data-nome="Colete Jeans" data-preco="99.50"
+                         data-descricao-breve="Colete estiloso para um look casual."
+                         data-descricao-completa="Colete estiloso para um look casual. Perfeito para adicionar uma camada extra de estilo ao seu visual do dia a dia.">
+                        <div class="imagem-container">
+                            <img src="https://scontent.fcwb7-1.fna.fbcdn.net/v/t1.15752-9/407069034_336540085978498_7859753098943989666_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=0024fc&_nc_ohc=zkbKW2W6MSUQ7kNvwFRbpXm&_nc_oc=Adm5niU8W4nVZeuq560VnntkkZZjrYupNgZ4_rNC7Qw6IRLiZ1MM83zpX0jzf-eULJ-B3B40JfB2HXPpP0nE2-PF&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.fcwb7-1.fna&oh=03_Q7cD2AHbSGmVQIzkWZiJHmGvWPIetLd0udymtDOYVUt6ROgobw&oe=6828A25F" alt="Colete Jeans">
+                            <div class="hover-info">
+                                <h3>Colete Jeans</h3>
+                                <p class="descricao">Colete estiloso para um look casual.</p>
+                            </div>
+                        </div>
+                        <h3>Colete Jeans</h3>
+                        <p class="preco">R$ 99.50</p>
+                        <button class="adicionar-carrinho">Adicionar ao Carrinho</button>
+                        <p class="descricao" style="display: none;">Colete estiloso para um look casual.</p>
+                    </div>
+                    <div class="produto" data-id="8" data-nome="Colete Couro" data-preco="199.00"
+                         data-descricao-breve="Colete sofisticado para ocasiões."
+                         data-descricao-completa="Colete sofisticado para ocasiões especiais. Feito em couro de alta qualidade, adiciona um toque de elegância e requinte ao seu visual.">
+                        <div class="imagem-container">
+                            <img src="https://scontent.fcwb7-1.fna.fbcdn.net/v/t1.15752-9/451049588_1872872993140555_4660651545163910624_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=0024fc&_nc_ohc=DoOghz_IA6sQ7kNvwG0H3fD&_nc_oc=Adn2y2ZxXYoFEE9tYlGUaRqx3-Axd63CSTRG1aI-U-8Rml5nsUYFYPrO_itrfnTLSoTGU-TvQBt-K6YaatRBPLwH&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.fcwb7-1.fna&oh=03_Q7cD2AHeESxmAybocrBsAR73Jzu_upmj_zfQtfr1ATry6V1obw&oe=6828A83B" alt="Colete Couro">
+                            <div class="hover-info">
+                                <h3>Colete Couro</h3>
+                                <p class="descricao">Colete sofisticado para ocasiões especiais.</p>
+                            </div>
+                        </div>
+                        <h3>Colete Couro</h3>
+                        <p class="preco">R$ 199.00</p>
+                        <button class="adicionar-carrinho">Adicionar ao Carrinho</button>
+                        <p class="descricao" style="display: none;">Colete sofisticado para ocasiões especiais.</p>
+                    </div>
+                    <div class="produto" data-id="9" data-nome="Colete Sarja" data-preco="79.90"
+                         data-descricao-breve="Colete confortável para o dia a dia."
+                         data-descricao-completa="Colete confortável e prático para o dia a dia. Ideal para quem busca um visual despojado sem abrir mão do conforto.">
+                        <div class="imagem-container">
+                            <img src="https://scontent.fcwb7-1.fna.fbcdn.net/v/t1.15752-9/414118383_749499403281069_4727332105011399722_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=0024fc&_nc_ohc=q2nvL2GiC8sQ7kNvwEJv7Px&_nc_oc=AdktrJkJijzqppWyN4lQs1_lNgjbeheedFyRYNqg8nw3lXtqiX1VqpbqF0oQ2ID8-Z8VGPrc5_HE0eklmCuuDyCz&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.fcwb7-1.fna&oh=03_Q7cD2AFDcz2rLR8Yc15qi8ilB0Ta_jLto0Q9R9AuSKk_oHjUuw&oe=68287CC6" alt="Colete Sarja">
+                            <div class="hover-info">
+                                <h3>Colete Sarja</h3>
+                                <p class="descricao">Colete confortável e prático para o dia a dia.</p>
+                            </div>
+                        </div>
+                        <h3>Colete Sarja</h3>
+                        <p class="preco">R$ 79.90</p>
+                        <button class="adicionar-carrinho">Adicionar ao Carrinho</button>
+                        <p class="descricao" style="display: none;">Colete confortável e prático para o dia a dia.</p>
+                    </div>
+                    <div class="produto" data-id="10" data-nome="Colete Tricot" data-preco="89.00"
+                         data-descricao-breve="Colete aconchegante para os dias frios."
+                         data-descricao-completa="Colete aconchegante para os dias frios. Feito em tricô macio, proporciona calor e conforto com um toque de estilo.">
+                        <div class="imagem-container">
+                            <img src="https://scontent.fcwb7-1.fna.fbcdn.net/v/t1.15752-9/372677630_268744979317025_5552431599794789021_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=0024fc&_nc_ohc=yyAtqTiPZJ0Q7kNvwEqW_2u&_nc_oc=AdlZ2DNtCEVGI_4VJdjjwjtUTsWKKle2yCju3xQho_-qP8DKj6F1ynw0cryA5kje7dODna31fZ-VlG-uaEGM2-z1&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.fcwb7-1.fna&oh=03_Q7cD2AHKvYSMGXSPmCGnlSNlJZ6pPXjIJ2Vb-29grgTthLEFRA&oe=68288DB9" alt="Colete Tricot">
+                            <div class="hover-info">
+                                <h3>Colete Tricot</h3>
+                                <p class="descricao">Colete aconchegante para os dias frios.</p>
+                            </div>
+                        </div>
+                        <h3>Colete Tricot</h3>
+                        <p class="preco">R$ 89.00</p>
+                        <button class="adicionar-carrinho">Adicionar ao Carrinho</button>
+                        <p class="descricao" style="display: none;">Colete aconchegante para os dias frios.</p>
+                    </div>
+                </div>
+            </div>
+            <div id="catalogo-outros" class="catalogo-sessao" style="display: none;">
+                <h3>Outros Produtos</h3>
+                <div class="produtos-outros">
+                    <div class="produto" data-id="11" data-nome="Cachecol Seda" data-preco="69.90"
+                         data-descricao-breve="Cachecol elegante e suave de seda."
+                         data-descricao-completa="Cachecol elegante e suave de seda pura. Um acessório sofisticado para complementar seu visual com leveza e estilo.">
+                        <div class="imagem-container">
+                            <img src="https://scontent.fcwb7-1.fna.fbcdn.net/v/t1.15752-9/417673662_414187100944938_682204655755656119_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=0024fc&_nc_ohc=a8Z9lWH8K-oQ7kNvwFWBiHc&_nc_oc=AdkK3oD6bZQyusm9IooY-6nTZ7cqGNx2d427N-gOzhRNREF4uwAx9PTLL5WU1mTdMIch7IwiX73ljuCm-qs35Ebf&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.fcwb7-1.fna&oh=03_Q7cD2AEt-uhI9i1izjR0bbuKynydetVN24F2y9LPGLnx746PTQ&oe=6828754D" alt="Cachecol Seda">
+                            <div class="hover-info">
+                                <h3>Cachecol Seda</h3>
+                                <p class="descricao">Cachecol elegante e suave de seda pura.</p>
+                            </div>
+                        </div>
+                        <h3>Cachecol Seda</h3>
+                        <p class="preco">R$ 69.90</p>
+                        <button class="adicionar-carrinho">Adicionar ao Carrinho</button>
+                        <p class="descricao" style="display: none;">Cachecol elegante e suave de seda pura.</p>
+                    </div>
+                    <div class="produto" data-id="12" data-nome="Luvas Couro" data-preco="79.50"
+                         data-descricao-breve="Luvas de couro macio para proteção."
+                         data-descricao-completa="Luvas de couro macio para proteção e estilo. Mantenha suas mãos aquecidas com elegância nos dias mais frios.">
+                        <div class="imagem-container">
+                            <img src="https://scontent.fcwb7-1.fna.fbcdn.net/v/t1.15752-9/451039555_1327612844864853_5306021702036008969_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=0024fc&_nc_ohc=L915YBjdPUsQ7kNvwHKsZJW&_nc_oc=Adm_SzKm5UdDrI6fW6iCKEySG_IbqdasOXQgwqvrBLHbiHgZLn3K_1vv48HaGYBlePfgmmX2M-QBfCimQs28vfA3&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.fcwb7-1.fna&oh=03_Q7cD2AGgW86_svehtuZUD26f2RqbDUXeuyK41Ww-EVD3tZuZzQ&oe=682873F6" alt="Luvas Couro">
+                            <div class="hover-info">
+                                <h3>Luvas Couro</h3>
+                                <p class="descricao">Luvas de couro macio para proteção e estilo.</p>
+                            </div>
+                        </div>
+                        <h3>Luvas Couro</h3>
+                        <p class="preco">R$ 79.50</p>
+                        <button class="adicionar-carrinho">Adicionar ao Carrinho</button>
+                        <p class="descricao" style="display: none;">Luvas de couro macio para proteção e estilo.</p>
+                    </div>
+                    <div class="produto" data-id="13" data-nome="Chapéu Sol" data-preco="55.00"
+                         data-descricao-breve="Chapéu estiloso para proteção solar."
+                         data-descricao-completa="Chapéu estiloso para proteção solar. Ideal para os dias ensolarados, combine proteção com um toque de elegância.">
+                        <div class="imagem-container">
+                            <img src="https://scontent.fcwb7-1.fna.fbcdn.net/v/t1.15752-9/470052946_8770361783058986_7231513922744850415_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=0024fc&_nc_ohc=s7ESDTepm3MQ7kNvwGvnW4T&_nc_oc=AdlL6zxXqIbSLvbxXKhbPCCCazfG1m8bvSUvlfoeCFFb7_VopLEAt18D3aPWc1ZsWy-F_PFZNhKVAkwx9wN6fH5S&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.fcwb7-1.fna&oh=03_Q7cD2AEUrIeXn59d5v_meSpDoa7DQb9g3wuPu7sBuN1rKcgUeg&oe=68289460" alt="Chapéu Sol">
+                            <div class="hover-info">
+                                <h3>Chapéu Sol</h3>
+                                <p class="descricao">Chapéu estiloso para proteção solar.</p>
+                            </div>
+                        </div>
+                        <h3>Chapéu Sol</h3>
+                        <p class="preco">R$ 55.00</p>
+                        <button class="adicionar-carrinho">Adicionar ao Carrinho</button>
+                        <p class="descricao" style="display: none;">Chapéu estiloso para proteção solar.</p>
+                    </div>
+                    <div class="produto" data-id="14" data-nome="Cinto Couro" data-preco="49.90"
+                         data-descricao-breve="Cinto de couro trançado elegante."
+                         data-descricao-completa="Cinto de couro com design trançado elegante. Um acessório que adiciona um toque de sofisticação a qualquer look.">
+                        <div class="imagem-container">
+                            <img src="https://scontent.fcwb7-1.fna.fbcdn.net/v/t1.15752-9/464987044_562568543207788_4604216506142879224_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=0024fc&_nc_ohc=YrwPlpGIVroQ7kNvwF0Q-pV&_nc_oc=Adl0a5cU9919v5ctFMzm08z0rHJGQoPTY1umnI_9hSUf5li3FIZ_Ja5C4u6Bdpws0kl2H3Lla_XjLayOyhcjwcub&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.fcwb7-1.fna&oh=03_Q7cD2AEMvmG2TB9oBw-gAqvq6CoVgTE1S1s3Sf7raR_Ga82YzA&oe=68288C55" alt="Cinto Couro">
+                            <div class="hover-info">
+                                <h3>Cinto Couro</h3>
+                                <p class="descricao">Cinto de couro com design trançado elegante.</p>
+                            </div>
+                        </div>
+                        <h3>Cinto Couro</h3>
+                        <p class="preco">R$ 49.90</p>
+                        <button class="adicionar-carrinho">Adicionar ao Carrinho</button>
+                        <p class="descricao" style="display: none;">Cinto de couro com design trançado elegante.</p>
+                    </div>
+                    <div class="produto" data-id="15" data-nome="Óculos Aviador" data-preco="119.00"
+                         data-descricao-breve="Óculos de sol clássico aviador."
+                         data-descricao-completa="Óculos de sol clássico com estilo aviador. Um acessório atemporal que combina com diversos estilos e oferece proteção contra os raios solares.">
+                        <div class="imagem-container">
+                            <img src="https://scontent.fcwb7-1.fna.fbcdn.net/v/t1.15752-9/417673662_414187100944938_682204655755656119_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=0024fc&_nc_ohc=a8Z9lWH8K-oQ7kNvwFWBiHc&_nc_oc=AdkK3oD6bZQyusm9IooY-6nTZ7cqGNx2d427N-gOzhRNREF4uwAx9PTLL5WU1mTdMIch7IwiX73ljuCm-qs35Ebf&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.fcwb7-1.fna&oh=03_Q7cD2AEt-uhI9i1izjR0bbuKynydetVN24F2y9LPGLnx746PTQ&oe=6828754D" alt="Óculos Aviador">
+                            <div class="hover-info">
+                                <h3>Óculos Aviador</h3>
+                                <p class="descricao">Óculos de sol clássico com estilo aviador.</p>
+                            </div>
+                        </div>
+                        <h3>Óculos Aviador</h3>
+                        <p class="preco">R$ 119.00</p>
+                        <button class="adicionar-carrinho">Adicionar ao Carrinho</button>
+                        <p class="descricao" style="display: none;">Óculos de sol clássico com estilo aviador.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section id="produtos" style="display: none;">
+        </section>
+    </section>
+
+    <div id="modal-produto" class="modal">
+        <div class="modal-content">
+            <span class="fechar-modal">&times;</span>
+            <img id="imagem-ampliada" src="" alt="Imagem do Produto">
+            <div id="detalhes-produto">
+                <h3 id="nome-produto-modal">Nome do Produto</h3>
+                <p id="descricao-produto-modal">Descrição do Produto</p>
+                <p id="preco-produto-modal" class="preco">R$ 0.00</p>
+                <button id="adicionar-do-modal" class="adicionar-carrinho">Adicionar ao Carrinho</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="carrinho-container" class="carrinho-container">
+        <h2>Carrinho de Compras</h2>
+        <ul id="lista-carrinho">
+            <li id="carrinho-vazio" style="display: block;">O carrinho está vazio.</li>
+        </ul>
+        <div id="total-carrinho">Total: R$ 0.00</div>
+
+        <div id="formas-pagamento">
+            <h3>Formas de Pagamento</h3>
+            <div class="pagamento-opcoes">
+                <button class="opcao-pagamento">
+                    <i class="fab fa-pix"></i> Pix
+                </button>
+                <button class="opcao-pagamento">
+                    <i class="fas fa-link"></i> Link de Pagamento</button>
+                    <button class="opcao-pagamento">
+                        <i class="fas fa-credit-card"></i> Parcelamento
+                    </button>
+                </div>
+            </div>
+
+            <button id="finalizar-whatsapp" class="finalizar-whatsapp">Finalizar Compra via WhatsApp</button>
+            <button id="fechar-carrinho" class="fechar-carrinho">Fechar Carrinho</button>
+        </div>
+
+        <div class="carrinho-flutuante">
+            <a href="#" id="mostrar-carrinho-flutuante">
+                <i class="fas fa-shopping-cart"></i>
+                <span id="carrinho-quantidade-flutuante">0</span>
+            </a>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Loja de Acessórios. Todos os direitos reservados.</p>
+        <p><a href="#">Política de Privacidade</a> | <a href="#">Termos de Uso</a></p>
+    </footer>
+
+    <div id="notificacao-container"></div>
+
+    <script src="script/script.js"></script>
+</body>
+</html>
